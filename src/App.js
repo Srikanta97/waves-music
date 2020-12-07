@@ -3,6 +3,7 @@ import Song from './components/song';
 import Player from './components/player';
 import music from './data';
 import './style/App.scss';
+import Library from './components/Library';
 
 const App = () => {
   // music() returns an array of objects containing song info
@@ -18,6 +19,7 @@ const App = () => {
         isPlaying={isPlaying}
         setIsPlaying={setIsPlaying}
       />
+      <Library songs={songs} setCurrentSong={setCurrentSong}/>
     </div>
   )
 }
