@@ -9,7 +9,7 @@ const App = () => {
   // music() returns an array of objects containing song info
   // songs is the array of objects
   const [songs, setSongs] = useState(music()); 
-  const [currentSong, setCurrentSong] = useState(songs[0]);
+  const [currentSong, setCurrentSong] = useState(songs[2]);
   const [isPlaying, setIsPlaying] = useState(false);
   return (
     <div className='container'>
